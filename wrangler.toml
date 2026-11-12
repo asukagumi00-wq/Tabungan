@@ -1,0 +1,13 @@
+name = "tabungan-berdua"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+USERS = "Aku,Dia"          # GANTI dengan dua nama kalian, pisahkan koma. Contoh: "Budi,Sari"
+TIMEZONE = "Asia/Jakarta"  # zona waktu untuk menentukan "hari ini"
+DEFAULT_AMOUNT = "50"      # nominal awal per hari; selanjutnya diubah langsung di website
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tabungan"
+database_id = "GANTI_DENGAN_DATABASE_ID"   # salin dari Cloudflare: Storage & Databases > D1 > tabungan
